@@ -279,6 +279,152 @@ Then, you can run containernet_wifi.py
 
 * * *
 
+## Be default, mac80211_hwsim does not support IEEE 802.11p. Hence, you need to do some changes in this module in order to enable IEEE 802.11p. Please follow the steps below:
+
+### wireless-regdb – regulatory information 
+
+Installing all the needed dependencies:
+```
+sudo apt-get install python-m2crypto
+pip install future
+wget https://mirrors.edge.kernel.org/pub/software/network/wireless-regdb/wireless-regdb-2018.05.31.tar.gz
+tar -zvxf wireless-regdb-2018.05.31.tar.gz
+cd wireless-regdb-2018.05.31
+```
+Your wireless-regdb-2018.05.31/db.txt file must include country DE as below:
+
+```
+country DE: DFS-ETSI
+        # entries 279004 and 280006
+        (2402 - 2482 @ 40), (20)
+        (5170 - 5250 @ 80), (20), AUTO-BW
+        (5250 - 5330 @ 80), (20), DFS, AUTO-BW
+        (5490 - 5710 @ 160), (27), DFS
+        # 5.9ghz band
+        # reference: http://www.etsi.org/deliver/etsi_en/302500_302599/302571/01.02.00_20/en_302571v010200a.pdf
+        (5850 - 5870 @ 10), (30)
+        (5860 - 5880 @ 10), (30)
+        (5870 - 5890 @ 10), (30)
+        (5880 - 5900 @ 10), (30)
+        (5890 - 5910 @ 10), (30)
+        (5900 - 5920 @ 10), (30)
+        (5910 - 5930 @ 10), (30)
+        # 60 gHz band channels 1-4, ref: Etsi En 302 567
+        (57240 - 65880 @ 2160), (40), NO-OUTDOOR
+```
+Then run:
+```
+make maintainer-clean
+make
+sudo make install PREFIX=/
+```
+
+### CRDA - Central Regulatory Domain Agent
+
+Install some extra packages
+
+```
+sudo apt-get install python-m2crypto libgcrypt11-dev
+```
+Clone the repository
+
+```
+wget https://mirrors.edge.kernel.org/pub/software/network/crda/crda-3.18.tar.gz
+tar -zvxf crda-3.18.tar.gz
+cd crda-3.18
+```
+Copy your public key (installed by wireless-regdb, see above) to CRDA sources.
+
+```
+cp /lib/crda/pubkeys/$USER.key.pub.pem pubkeys/
+```
+
+Compile and install CRDA (custom REG_BIN is needed on Debian)
+
+```
+make REG_BIN=/lib/crda/regulatory.bin
+sudo make install PREFIX=/ REG_BIN=/lib/crda/regulatory.bin
+```
+
+Test CRDA and the generated regulatory.bin
+
+```
+sudo /sbin/regdbdump /lib/crda/regulatory.bin | grep -i ocb
+country 00: invalid
+(5850.000 - 5925.000 @ 20.000), (20.00), NO-CCK, OCB-ONLY
+```
+
+### mac80211_hwsim.c
+
+First you have to create a Makefile with the content below:
+
+```
+obj-m += mac80211_hwsim.o
+all:
+      make -C /lib/modules/$(shell uname -r)/build M=$(PWD) modules
+clean:
+      make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+```
+
+Then, you should consider mac80211_hwsim with the changes below (consider to use a mac80211_hwsim
+version which matches with your kernel version): You may want to refer to https://github.com/torvalds/linux/blob/master/drivers/net/wireless/mac80211_hwsim.c
+
+``` 
+static const struct ieee80211_regdomain hwsim_world_regdom_custom_01
++ .n_reg_rules = 5,
++ REG_RULE(5855-10, 5925+10, 40, 0, 33, 0),
+static const struct ieee80211_regdomain hwsim_world_regdom_custom_02 = {
++ .n_reg_rules = 3,
++ REG_RULE(5855-10, 5925+10, 40, 0, 33, 0),
+static const struct ieee80211_iface_combination hwsim_if_comb[] = {
++.radar_detect_widths = BIT(NL80211_CHAN_WIDTH_5) |
+                            BIT(NL80211_CHAN_WIDTH_10) |
+static const struct ieee80211_iface_combination hwsim_if_comb_p2p_dev[] = {
++.radar_detect_widths = BIT(NL80211_CHAN_WIDTH_5) |
+                            BIT(NL80211_CHAN_WIDTH_10) |
+static const struct ieee80211_channel hwsim_channels_5ghz[]
+/* ITS-G5B */
++ CHAN5G(5855), /* Channel 171 */
++ CHAN5G(5860), /* Channel 172 */
++ CHAN5G(5865), /* Channel 173 */
++ CHAN5G(5870), /* Channel 174 */
++ /* ITS-G5A */
++ CHAN5G(5875), /* Channel 175 */
++ CHAN5G(5880), /* Channel 176 */
++ CHAN5G(5885), /* Channel 177 */
++ CHAN5G(5890), /* Channel 178 */
++ CHAN5G(5895), /* Channel 179 */
++ CHAN5G(5900), /* Channel 180 */
++ CHAN5G(5905), /* Channel 181 */
++ /* ITS-G5D */
++ CHAN5G(5910), /* Channel 182 */
++ CHAN5G(5915), /* Channel 183 */
++ CHAN5G(5920), /* Channel 184 */
++ CHAN5G(5925), /* Channel 185 */
+
+#ifdef CONFIG_MAC80211_MESH
+                           BIT(NL80211_IFTYPE_MESH_POINT) |
+#endif
+                           BIT(NL80211_IFTYPE_AP) |
+                           BIT(NL80211_IFTYPE_OCB) |
+                       + BIT(NL80211_IFTYPE_P2P_GO) },
+if (vif->type != NL80211_IFTYPE_AP &&
+            vif->type != NL80211_IFTYPE_MESH_POINT &&
+          + vif->type != NL80211_IFTYPE_OCB &&
+            vif->type != NL80211_IFTYPE_ADHOC)
+            return;
+hw->wiphy->interface_modes = BIT(NL80211_IFTYPE_STATION) |
+                             BIT(NL80211_IFTYPE_AP) |
+                             BIT(NL80211_IFTYPE_P2P_CLIENT) |
+                             BIT(NL80211_IFTYPE_P2P_GO) |
+                             BIT(NL80211_IFTYPE_ADHOC) |
+                           + BIT(NL80211_IFTYPE_OCB) |
+                             BIT(NL80211_IFTYPE_MESH_POINT);
+```
+
+Finally, you run the make command to compile mac80211_hwsim.
+
+
 ### Header 3
 
 ```js
