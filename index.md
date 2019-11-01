@@ -279,7 +279,9 @@ Then, you can run containernet_wifi.py
 
 * * *
 
-## Be default, mac80211_hwsim does not support IEEE 802.11p. Hence, you need to do some changes in this module in order to enable IEEE 802.11p. Please follow the steps below:
+## IEEE 802.11p
+
+By default, mac80211_hwsim does not support IEEE 802.11p. Hence, you need to do some changes in this module in order to enable IEEE 802.11p. Please follow the steps below:
 
 ### wireless-regdb – regulatory information 
 
