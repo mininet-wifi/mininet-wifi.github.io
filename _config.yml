@@ -6,7 +6,7 @@ google_analytics:
 theme: jekyll-theme-minimal
 
 site_index: /index.md
-site_get_started: /_pages/get-started.md
+site_get_started: /get-started
 
 
 # Reading Files
