@@ -7,3 +7,10 @@ theme: jekyll-theme-minimal
 
 site_index: /index.md
 site_get_started: /_pages/get-started.md
+
+
+# Reading Files
+include:
+  - .htaccess
+  - _pages
+  - files
