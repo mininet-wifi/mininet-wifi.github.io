@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "Get Started"
+permalink: /get-started/
+author_profile: true
 ---
 
 # Download/Get Started With Mininet-WiFi
