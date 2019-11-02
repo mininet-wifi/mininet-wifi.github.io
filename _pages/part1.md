@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Par1"
-permalink: /par1/
+title: "Part 1"
+permalink: /part1/
 author_profile: true
 ---
 
