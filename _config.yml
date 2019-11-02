@@ -4,3 +4,6 @@ description: Emulation Platform for Software-Defined Wireless Networks
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+
+site_index: /index.md
+site_get_started: /docs/get-started.md
