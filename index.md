@@ -155,6 +155,18 @@ $ sudo mn --wifi -v output
 mininet> exit
 ```
 
+## Client Isolation
+
+Be default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
+isolation. You can either try sudo mn --wifi --no-bridge or take examples/simplewifitopology.py as reference.  
+
+Client isolation can be used to prevent low-level bridging of frames between associated stations in the BSS. By default, this bridging is allowed.  
+
+You may also want to refer to the OpenFlow spec.
+[https://www.opennetworking.org/images/stories/downloads/sdn-resources/onf-specifications/openflow/openflow-switch-v1.5.0.noipr.pdf
+](B.6.3 IN PORT Virtual Port) 
+The behavior of sending out the incoming port was not clearly defined in earlier versions of the specification. It is now forbidden unless the output port is explicitly set to OFPP_IN_PORT virtual port (0xfff8) is set. The primary place where this is used is for wireless links, where a packet is received over the wireless interface and needs to be sent to another host through the same interface. For example, if a packet needed to be sent to all interfaces on the switch, two actions would need to be specified: ”actions=output:ALL,output:IN PORT”.
+
 # Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands
 
 ## Display Options
