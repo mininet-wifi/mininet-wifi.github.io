@@ -7,6 +7,11 @@ theme: jekyll-theme-minimal
 
 site_index: /index.md
 site_get_started: /get-started
+site_part1: /part1
+site_part2: /part2
+site_part3: /part3
+site_part4: /part4
+site_80211p: /80211p
 
 
 # Reading Files
