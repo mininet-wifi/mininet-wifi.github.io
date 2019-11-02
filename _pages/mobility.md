@@ -18,8 +18,8 @@ Mininet-WiFi supports the following mobility models:
 - TimeVariantCommunity
 
 ## How to configure mobility models?
-The mobility models can be configured with the method net.startMobility() like in examples/mobilityModel.py. You may also have to consider the use of examples/mobility.py if you want a
-different type of mobility. In addition, you may want to take into account some parameters:
+The mobility models can be configured with the method net.startMobility() like in examples/mobilityModel.py. You may also want to consider the use of examples/mobility.py if you want a
+custom mobility standard. In addition, you may want to take into account some parameters:
 
 ### Random Walk
 ```

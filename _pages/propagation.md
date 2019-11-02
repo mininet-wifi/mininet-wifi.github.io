@@ -11,15 +11,14 @@ author_profile: true
 Mininet-WiFi supports the following propagation models: 
 - Friis Propagation Loss Model,
 - Log-Distance Propagation Loss Model (default)
-- Log-Normal Shadowing Propagation
-- Loss Model, International Telecommunication Union (ITU) Propagation Loss Model
-- Two-Ray Ground Propagation Loss Model.
+- Log-Normal Shadowing Propagation Loss Model
+- International Telecommunication Union (ITU) Propagation Loss Model
+- Two-Ray Ground Propagation Loss Model
 
-## How to add specific Propagation Model?
+## How to add and configure a Propagation Model?
 You have to call the method net.setPropagationModel() like in examples/propagationModel.py.   
 
-You might have to consider some parameters for specifics propagation models (not mandatory), for
-example:
+You may also want to consider some parameters, for example:
 
 ### Friis Propagation Loss Model
 ```
