@@ -43,6 +43,29 @@ You should see an OpenFlow Port Status Change notification get generated. To bri
 
 mininet-wifi> link sta1 ap1 up
 
+## Forcing Association
+
+You can force the association with an AP either by using iw tool:
+```
+mininet-wifi> sta1 iw dev sta1-wlan0 connect new-ssid
+```
+
+or by using the Mininet-WiFi's API:
+```
+mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
+```
+
+## Setting Tx Power
+```
+mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
+```
+
+## Setting Channel
+```
+mininet-wifi> py sta1.setChannel(6, intf='ap1-wlan1')
+```
+
+
 ## XTerm Display
 
 To display an xterm for sta1 and sta2:
