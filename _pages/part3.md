@@ -83,7 +83,7 @@ mininet-wifi> sta1-wlan0 ibss join adhocNet 2412 02:CA:FF:EE:BA:01
 ```
 or by using the Mininet-WiFi's API:
 ```
-mininet-wifi> py sta1.setChannel(6, intf='ap1-wlan1')
+mininet-wifi> py sta1.setChannel(1, intf='ap1-wlan1')
 ```
 
 ## Shutting AP down
