@@ -38,3 +38,13 @@ Once you have the source tree, the command to install Mininet-WiFi is:
 ```
 sudo util/install.sh -Wlnfv
 ```
+
+#### install.sh options:   
+-W: wireless dependencies     
+-l: wmediumd   
+-n: mininet-wifi dependencies       
+-f: OpenFlow      
+-v: OpenvSwitch      
+      
+optional:    
+-6: wpan tools    
