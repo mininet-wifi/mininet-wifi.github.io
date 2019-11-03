@@ -56,14 +56,47 @@ mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 ```
 
 ## Setting Tx Power
+You can set the Tx Power either by iw tool:
+```
+
+```
+or by using the Mininet-WiFi's API:
+
 ```
 mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
 ```
 
 ## Setting Channel
+You can set the channel either by iw tool:
+- if the node is an AP:
+```
+mininet-wifi> ap1 hostapd_cli -i ap1-wlan1 chan_switch 1 2412
+```
+- if the node is working in mesh mode:
+```
+mininet-wifi> sta1 iw dev sta1-mp0 set channel 6
+```
+- if the node is working in adhoc mode:
+```
+mininet-wifi> sta1 iw dev sta1-wlan0 ibss leave
+mininet-wifi> sta1-wlan0 ibss join adhocNet 2412 02:CA:FF:EE:BA:01
+```
+or by using the Mininet-WiFi's API:
 ```
 mininet-wifi> py sta1.setChannel(6, intf='ap1-wlan1')
 ```
+
+## Shutting AP down
+You can shutdown the AP with:
+```
+mininet-wifi> py ap1.stop_()
+```
+and bring it up again with:
+
+```
+mininet-wifi> py ap1.start_()
+```
+
 
 
 ## XTerm Display
