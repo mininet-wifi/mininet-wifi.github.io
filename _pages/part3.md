@@ -56,9 +56,9 @@ mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 ```
 
 ## Setting Tx Power
-You can set the Tx Power either by iw tool:
+You can set the Tx Power either by iw tool (for txpower = 10):
 ```
-
+mininet-wifi> sta1 iw dev sta1-wlan0 set txpower fixed 1000
 ```
 or by using the Mininet-WiFi's API:
 
