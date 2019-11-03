@@ -7,6 +7,13 @@ author_profile: true
 
 # Part 4: Supported Features
 
+## Socket Communication
+
+The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. Please watch the demo video for a better understanding.
+
+### Demo Video
+- [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)
+
 ## SUMO
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/sumo.png?raw=true)

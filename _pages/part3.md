@@ -109,6 +109,12 @@ sta1.setAdhocMode(intf='sta1-wlan0')
 sta1.setMeshMode(intf='sta1-wlan0')
 ```
 
+## Setting up the Node Position
+```
+mininet-wifi> py sta1.setPosition('10,10,0') # x=10, y=10, z=0
+```
+
+
 ## Shutting AP down
 You can shutdown the AP with:
 ```
