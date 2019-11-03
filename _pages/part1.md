@@ -60,7 +60,7 @@ The same can be done for rssi, mode, channel, freq, range, ip, ip6, etc.
 
 ## Test connectivity between stations
 
-Now, verify that you can ping from station 1 to station 2:
+Now, verify that you can ping from station1 to station2:
 ```
 mininet-wifi> sta1 ping -c1 sta2
 ```
