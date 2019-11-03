@@ -40,8 +40,9 @@ To disable both halves of a virtual ethernet pair:
 mininet-wifi> link ap1 sta1 down
 
 You should see an OpenFlow Port Status Change notification get generated. To bring the link back up:
-
+```
 mininet-wifi> link sta1 ap1 up
+```
 
 ## Forcing Association
 
