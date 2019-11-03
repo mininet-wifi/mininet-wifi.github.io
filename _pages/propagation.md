@@ -30,13 +30,13 @@ sL = system loss
 ```
 net.setPropagationModel(model="logDistance", sL = $int, exp = $int)
 ```
-sL = system loss
+sL = system loss  
 exp = exponent
 
 ### Log-Normal Shadowing Propagation Loss Model
 ```
 net.setPropagationModel(model="logNormalShadowing", sL=$int, exp=$int, variance=$int)
 ```
-sL = system loss
-exp = exponent
+sL = system loss  
+exp = exponent  
 variance = gaussian variance
