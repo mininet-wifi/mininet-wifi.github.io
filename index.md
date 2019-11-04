@@ -18,14 +18,14 @@ Although we recommend you to use latest LTS version of Ubuntu, Mininet-WiFi shou
 
 The main components that make part of the development of Mininet-WiFi are illustrated in the figure below. In the kernel-space the module mac80211_hwsim is responsible for creating virtual Wi-Fi interfaces, important for stations and access points. Still in the kernel-space, MLME (Media Access Control Sublayer Management Entity) is realized in the stations side, while in the user-space the hostapd is responsible for this task in the AP side.  
 
-![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/components.eps?raw=true)
+![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/components.png?raw=true)
 
 Mininet-WiFi also uses a couple utilities such as iw, iwconfig e o wpa_supplicant. The first two are used for interface configuration and for getting information from wireless interfaces and the last one is used with Hostapd, in order to support WPA (Wi-Fi Protected Access), among other things. Besides them, another fundamental utility is TC (Traffic Control). The TC is an user-space utility program used to configure the Linux kernel packet scheduler, responsible for controlling the rate, delay, latency and loss, applying these attributes in virtual interfaces of stations and APs, representing with higher fidelity the behavior of the real world.  
 
 Figure below depicts the components and connections in a simple topology with two stations (or hosts) created with Mininet-WiFi, where the newly implemented components (highlighted in gray) are presented along the original Mininet building blocks. Although stations are equipped with a wireless interface by default they are able to connect with access points through wired links (veth pairs) as well.  
 
 
-![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/arch.eps?raw=true)
+![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/arch.png?raw=true)
 
 Linux OS network namespaces interconnected through virtual Ethernet (veth) pairs. The wireless interfaces to virtualize WiFi devices work on master mode for access points and managed mode for stations.   
 
