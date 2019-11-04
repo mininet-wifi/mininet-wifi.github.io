@@ -1,8 +1,9 @@
-title: Minimal theme
+title: Mininet-WiFi
 logo: /assets/img/logo.png
 description: Emulation Platform for Software-Defined Wireless Networks
 show_downloads: true
 google_analytics:
+baseurl: "/"
 theme: jekyll-theme-minimal
 markdown: kramdown
 heading_anchors: true
