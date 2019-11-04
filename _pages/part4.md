@@ -9,7 +9,7 @@ author_profile: true
 
 ## Socket Communication
 
-The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. Please watch the demo video for a better understanding.
+The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. Please watch the demo video for a better understanding.
 
 ### Demo Video
 - [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)
