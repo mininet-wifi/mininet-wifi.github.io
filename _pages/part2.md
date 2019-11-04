@@ -87,5 +87,3 @@ It is very common for an organization to have multiple SSIDs in their wireless n
 ```
 ap1 = net.addAccessPoint('ap1', vssids=3, ssid=['ssid,ssid1,ssid2,ssid3'], mode='g', channel='1')
 ```
-
-Take me to <a href="#pookie">pookie</a>

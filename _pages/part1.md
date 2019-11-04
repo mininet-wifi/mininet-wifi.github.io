@@ -84,5 +84,3 @@ If Mininet crashes for some reason, clean it up:
 $ sudo mn -c
 ```
 
-<a name="pookie"></a>
-
