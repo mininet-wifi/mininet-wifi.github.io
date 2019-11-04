@@ -1,10 +1,13 @@
 ---
 layout: default
 ---
-                    
-                            
-The instructions you will find on this page may only work with the [dev branch](https://github.com/intrig-unicamp/mininet-wifi/tree/dev). The information on this page will replace the user manual still available at: https://github.com/ramonfontes/manual-mininet-wifi/raw/master/mininet-wifi-draft-manual.pdf   
 
+## Alert!               
+                            
+The instructions you will find along this page may only work with the [dev branch](https://github.com/intrig-unicamp/mininet-wifi/tree/dev). The information on this page will replace the user manual still available at: https://github.com/ramonfontes/manual-mininet-wifi/raw/master/mininet-wifi-draft-manual.pdf   
+
+
+## Introduction
 
 Mininet-WiFi is a fork of the Mininet SDN network emulator and extended the functionality of Mininet by adding virtualized WiFi Stations and Access Points based on the standard Linux wireless drivers and the 80211_hwsim wireless simulation driver. This means that new classes has been added in order to support the addition of these wireless devices in a Mininet network scenario and to emulate the attributes of a mobile station such as position and movement relative to the access points.    
 
@@ -69,5 +72,5 @@ Wmediumd has been shown to be the best approach for the simulation of the wirele
 - It isolates the wireless interfaces from each other
 - wmediumd implements backoff algorithm. TC relies only in FIFO queue discipline.
 - It decides when the association has to be evoked based on the signal level
-- Values for bandwidth, loss, latency and delay are applied relying in a matrix. This matrix implements an option to determine PER (packet error rate) with outer matrix defined in IEEE 802.11ax. The matrix is defined in Appendix 3 of 11-14-0571-12 TGax Evaluation Methodology (https://mentor.ieee.org/802.11/dcn/14/11-14-0571-12-00ax-evaluation-methodology.docx).
+- Values for bandwidth, loss, latency and delay are applied relying in a matrix. This matrix implements an option to determine PER (packet error rate) with outer matrix defined in IEEE 802.11ax. The matrix is defined in Appendix 3 of [11-14-0571-12 TGax Evaluation Methodology](https://mentor.ieee.org/802.11/dcn/14/11-14-0571-12-00ax-evaluation-methodology.docx).
 - We highly recommend wmediumd for both adhoc and wireless mesh networks.
