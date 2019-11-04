@@ -2,7 +2,7 @@
 layout: default
 title: "Part 2"
 permalink: /part2/
-author_profile: true
+html_document: default
 ---
 
 # Part 2: Advanced Startup Options
@@ -90,3 +90,5 @@ ap1 = net.addAccessPoint('ap1', vssids=3, ssid=['ssid,ssid1,ssid2,ssid3'], mode=
 ```
 
 [header](#header)
+
+### <a name="tith"></a>This is the Heading
