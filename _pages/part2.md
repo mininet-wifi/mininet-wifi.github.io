@@ -4,8 +4,7 @@ title: "Part 2"
 permalink: /part2/
 html_document: default
 ---
-[header1](#header1)
-# Part 2: Advanced Startup Options
+[# Part 2: Advanced Startup Options][]
 
 Run a Regression Test
 You do not need to drop into the CLI; Mininet-WiFi can also be used to run self-contained regression tests.
@@ -32,7 +31,7 @@ Run a regression test:
 $ sudo mn --wifi --test pingall --topo single,3
 ```
 
-## Adjustable Verbosity
+[## Adjustable Verbosity][]
 The default verbosity level is info, which prints what Mininet-WiFi is doing during startup and teardown. Compare this with the full debug output with the -v param:
 ```
 $ sudo mn --wifi -v debug
@@ -45,7 +44,7 @@ $ sudo mn --wifi -v output
 mininet> exit
 ```
 
-## Client Isolation
+[## Client Isolation][]
 
 Be default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
 isolation. You can either try
@@ -88,6 +87,3 @@ It is very common for an organization to have multiple SSIDs in their wireless n
 ```
 ap1 = net.addAccessPoint('ap1', vssids=3, ssid=['ssid,ssid1,ssid2,ssid3'], mode='g', channel='1')
 ```
-
-[header](#header)
-### <a name="head1234"></a>A Heading in this SO entry!
