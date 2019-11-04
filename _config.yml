@@ -4,6 +4,8 @@ description: Emulation Platform for Software-Defined Wireless Networks
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+markdown: kramdown
+heading_anchors: true
 
 site_index: /index.md
 site_get_started: /get-started
@@ -15,7 +17,6 @@ site_80211p: /80211p
 site_propagation: /propagation
 site_mobility: /mobility
 site_faq: /faq
-site_test: /test
 
 
 # Reading Files
