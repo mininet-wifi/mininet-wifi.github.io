@@ -2,7 +2,6 @@
 layout: default
 title: "Part 3"
 permalink: /part3/
-author_profile: true
 ---
 
 
@@ -37,7 +36,9 @@ mininet-wifi> py locals()
 For fault tolerance testing, it can be helpful to bring links up and down.
 
 To disable both halves of a virtual ethernet pair:
+```
 mininet-wifi> link ap1 sta1 down
+```
 
 You should see an OpenFlow Port Status Change notification get generated. To bring the link back up:
 ```

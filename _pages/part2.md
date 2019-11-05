@@ -62,9 +62,9 @@ You may also want to refer to the OpenFlow spec.
 
 ## Multiple Wireless Network Interfaces
 
-Wireless nodes can have multiple wireless interfaces. The parameter wlans allows you to add many interfaces on a single node. For example, let’s take the code below:   
+Wireless nodes can have multiple wireless interfaces. The wlans parameter allows you to add many interfaces on a single node. For example, let’s take the code below:   
 ```
-sta1 = net.addStation( 'sta1', wlans=2)
+sta1 = net.addStation('sta1', wlans=2)
 ```
 
 wlans=2 means that two wireless interfaces will be creted for sta1. APs can have multiple wireless interfaces as well, however, they deserve a particular attention. For example, let’s take the code below:    
