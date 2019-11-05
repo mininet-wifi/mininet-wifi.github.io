@@ -18,6 +18,7 @@ site_80211p: /80211p
 site_propagation: /propagation
 site_mobility: /mobility
 site_faq: /faq
+site_sixlowpan: /sixlowpan
 
 
 # Reading Files
