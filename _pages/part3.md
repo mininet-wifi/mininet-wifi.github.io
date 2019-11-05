@@ -2,6 +2,7 @@
 layout: default
 title: "Part 3"
 permalink: /part3/
+heading_anchors: true
 ---
 
 
