@@ -56,8 +56,3 @@ mininet-wifi> sensor1 iwpan --help
 
 ## Demo Video
 [https://www.youtube.com/watch?v=LKTMiUyB6Lk](https://www.youtube.com/watch?v=LKTMiUyB6Lk)
-
-
-<h1 id="my-custom-anchor-name">
-  # My Header Name
-</h1>
