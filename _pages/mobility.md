@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-# Mobility Models Supported
+# Mobility Models
 
 Mininet-WiFi supports the following mobility models: 
 - RandomWalk
