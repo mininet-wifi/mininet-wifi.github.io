@@ -2,7 +2,7 @@
 layout: default
 title: "Part 2"
 permalink: /part2/
-html_document: default
+author_profile: true
 ---
 # Part 2: Advanced Startup Options
 

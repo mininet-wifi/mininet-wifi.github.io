@@ -2,7 +2,7 @@
 layout: default
 title: "SixLoWPAN"
 permalink: /sixlowpan/
-heading_anchors: true
+author_profile: true
 ---
 
 6LoWPAN is supported by Mininet-WiFi thanks to the fakelb and mac802154_hwsim module. Both modules have been developed to support 6lowpan, but mac802154_hwsim (which is supported from Linux Kernel version 4.18) is gradually replacing fakelb.   
