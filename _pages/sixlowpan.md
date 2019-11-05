@@ -58,4 +58,6 @@ mininet-wifi> sensor1 iwpan --help
 [https://www.youtube.com/watch?v=LKTMiUyB6Lk](https://www.youtube.com/watch?v=LKTMiUyB6Lk)
 
 
-[create an anchor](#anchors-in-markdown) test
+<h1 id="my-custom-anchor-name">
+  My Header Name
+</h1>
