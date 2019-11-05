@@ -33,7 +33,7 @@ net.addAccessPoint(... band='2.4')
 ### Is it possible to create a wired link between station and ap?
 Yes. When you add a link between station and ap you have to add the parameter link=’wired’, for example:
 ```
-net.addLink(sta1, ap2, link=’wired’)
+net.addLink(sta1, ap2, link='wired')
 ```
 
 ### How to uninstall Mininet-WiFi?

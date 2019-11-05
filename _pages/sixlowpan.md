@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "SixLoWPAN"
 permalink: /sixlowpan/
 heading_anchors: true
 ---
