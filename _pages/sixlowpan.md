@@ -4,6 +4,7 @@ title: "SixLoWPAN"
 permalink: /sixlowpan/
 author_profile: true
 heading_anchors: true
+#html_document: default
 ---
 
 # 6LoWPAN
@@ -55,3 +56,6 @@ mininet-wifi> sensor1 iwpan --help
 
 ## Demo Video
 [https://www.youtube.com/watch?v=LKTMiUyB6Lk](https://www.youtube.com/watch?v=LKTMiUyB6Lk)
+
+
+[create an anchor](#anchors-in-markdown) test
