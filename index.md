@@ -18,7 +18,8 @@ Mininet-WiFi extends the Mininet code base by adding or modifying classes and sc
 
 Although we recommend you to use latest LTS version of Ubuntu, Mininet-WiFi should work fine in any Ubuntu Distribution from 14.04.   
 
-## Architecture and Components
+<a id="components"></a>
+## [Architecture and Components](#components)
 
 The main components that make part of the development of Mininet-WiFi are illustrated in the figure below. In the kernel-space the module mac80211_hwsim is responsible for creating virtual Wi-Fi interfaces, important for stations and access points. Still in the kernel-space, MLME (Media Access Control Sublayer Management Entity) is realized in the stations side, while in the user-space the hostapd is responsible for this task in the AP side.  
 
