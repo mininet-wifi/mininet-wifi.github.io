@@ -19,7 +19,7 @@ Follow these steps for a VM install:
 <a id="opt2"></a>
 ## [Option 2: Native Installation from Source](#opt2)
 
-This option works well for local VM, remote EC2, and native installation. It assumes the starting point of a fresh Ubuntu (or, experimentally, Fedora) installation.
+This option works well for local VM, remote EC2, and native installation. It assumes the starting point of a fresh Ubuntu, Debian (or, experimentally, Fedora) installation.
 
 We strongly recommend more recent Ubuntu releases, because they support newer versions of Open vSwitch. (Fedora also supports recent OVS releases)
 
