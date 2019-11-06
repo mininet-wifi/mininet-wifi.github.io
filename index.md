@@ -6,14 +6,15 @@ layout: default
                             
 The instructions you will find along this page may only work with the [dev branch](https://github.com/intrig-unicamp/mininet-wifi/tree/dev). The information on this page will replace the user manual still available at: https://github.com/ramonfontes/manual-mininet-wifi/raw/master/mininet-wifi-draft-manual.pdf   
 
-
-## Introduction
+<a id="intro"></a>
+## [Introduction](#intro)
 
 Mininet-WiFi is a fork of the Mininet SDN network emulator and extended the functionality of Mininet by adding virtualized WiFi Stations and Access Points based on the standard Linux wireless drivers and the 80211_hwsim wireless simulation driver. This means that new classes has been added in order to support the addition of these wireless devices in a Mininet network scenario and to emulate the attributes of a mobile station such as position and movement relative to the access points.    
 
 Mininet-WiFi extends the Mininet code base by adding or modifying classes and scripts. So, Mininet-WiFi adds new functionality and still supports all the normal SDN emulation capabilities of the standard Mininet network emulator.   
 
-## Requirements
+<a id="requirements"></a>
+## [Requirements](#requirements)
 
 Although we recommend you to use latest LTS version of Ubuntu, Mininet-WiFi should work fine in any Ubuntu Distribution from 14.04.   
 
@@ -38,11 +39,13 @@ Linux OS network namespaces interconnected through virtual Ethernet (veth) pairs
 
 Both stations and access points use cfg80211 to communicate with the wireless device driver, a Linux 802.11 configuration API that provides communication between stations and mac80211. This framework in turn communicates directly with the WiFi device driver through a netlink socket (or more specifically nl80211) that is used to configure the cfg80211 device and for kernel-user-space communication as well.   
 
-## Wireless Medium Emulation
+<a id="wirelessemuation"></a>
+## [Wireless Medium Emulation](#wirelessemuation)
 
 Mininet-WiFi relies on two approaches for simulating the wireless medium: tc and wmediumd.  
 
-### Traffic Control (TC)
+<a id="tc"></a>
+### [Traffic Control (TC)](#tc)
 
 Tc (traffic control) is the user-space utility program used to configure the Linux kernel packet scheduler. Used to configure Traffic Control in the Linux kernel, Traffic Control consists of the following:   
 
@@ -54,7 +57,8 @@ Tc (traffic control) is the user-space utility program used to configure the Lin
 
 The aforementioned properties have been used to apply values for bandwidth, loss, latency and delay in Mininet-WiFi. Tc was the first approach adopted in Mininet-WiFi for simulating the wireless medium.    
 
-#### Intermediate Functional Block (IFB) Devices
+<a id="ifb"></a>
+#### [Intermediate Functional Block (IFB) Devices](#ifb)
 
 There are two modes of traffic shaping: ingress and egress. Ingress handles incoming traffic and egress outgoing traffic. Linux does not support shaping/queuing on ingress, but only policing. Therefore IFB exists, which we can attach to the ingress queue while we can add any normal queuing like as egress queue on the IFB device.AP   
 
@@ -66,12 +70,13 @@ If you want to enable IFB in Mininet-WiFi you need to set IFB = True within _Min
 net = Mininet_wifi(... ifb=True)
 ```
 
-### Wmediumd
+<a id="wmediumd"></a>
+### [Wmediumd](#wmediumd)
 
 The kernel module mac80211_hwsim uses the same virtual medium for all wireless nodes. This means all nodes are internally in range of each other and they can be discovered in a wireless scan on the virtual interfaces. Mininet-WiFi simulates their position and wireless ranges by assigning stations to other stations or access points and revoking these wireless associations. If wireless interfaces should be isolated from each other (e.g. in adhoc or mesh networks) a solution like wmediumd is required. It uses a kind of a dispatcher to permit or deny the transfer of packets from one interface to another.   
 
-
-### Traffic control versus Wmediumd
+<a id="tcversuswmediumd"></a>
+### [Traffic control versus Wmediumd](#tcversuswmediumd)
 
 Wmediumd has been shown to be the best approach for the simulation of the wireless medium. Some advantages include:
 
