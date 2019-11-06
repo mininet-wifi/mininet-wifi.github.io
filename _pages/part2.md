@@ -44,7 +44,8 @@ $ sudo mn --wifi -v output
 mininet> exit
 ```
 
-## Client Isolation
+## [Client Isolation](clientisolation)
+<a id="clientisolation"></a>
 
 Be default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
 isolation. You can either try
@@ -88,7 +89,8 @@ It is very common for an organization to have multiple SSIDs in their wireless n
 ap1 = net.addAccessPoint('ap1', vssids=3, ssid=['ssid,ssid1,ssid2,ssid3'], mode='g', channel='1')
 ```
 
-## Network Address Translator (NAT)
+## [Network Address Translator (NAT)](nat)
+<a id="nat"></a>
 
 You can add a NAT to the Mininet-WiFi network by calling _net.addNAT()_, as illustrated in the code below.
 
@@ -140,5 +142,3 @@ According to the code below, _addNAT_ creates a Node named _nat0_ linked with _a
 ```
 net.addNAT(name='nat0', linkTo='ap1', ip='192.168.100.254').configDefault()
 ```
-
-<a id="about"></a>
