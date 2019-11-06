@@ -7,7 +7,8 @@ author_profile: true
 
 # Download/Get Started With Mininet-WiFi
 
-## Option 1: Mininet VM Installation (easy, recommended)
+<a id="opt1"></a>
+## [Option 1: Mininet-WiFi VM Installation (easy, recommended)](#opt1)
 
 Follow these steps for a VM install:
 
@@ -15,7 +16,8 @@ Follow these steps for a VM install:
 1. Download and install a virtualization system. We recommend VirtualBox (free, GPL) because it is free and works on OS X, Windows, and Linux (though it’s slightly slower than VMware in our tests.) You can also use Qemu for any platform, VMware Workstation for Windows or Linux, VMware Fusion for Mac, or KVM (free, GPL) for Linux.
 1. Sign up for the [mininet-wifi-discuss](https://groups.google.com/forum/#!forum/mininet-wifi-discuss) mailing list. This is the source for Mininet-WiFi support and discussion with the friendly Mininet-WiFi community. ;-)
 
-## Option 2: Native Installation from Source
+<a id="opt2"></a>
+## [Option 2: Native Installation from Source](#opt2)
 
 This option works well for local VM, remote EC2, and native installation. It assumes the starting point of a fresh Ubuntu (or, experimentally, Fedora) installation.
 

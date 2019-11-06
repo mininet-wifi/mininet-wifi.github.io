@@ -7,7 +7,8 @@ author_profile: true
 
 # Part 1: Everyday Mininet-WiFi Usage
 
-## Interact with Stations and APs
+<a id="interact"></a>
+## [Interact with Stations and APs](#interact)
 
 Start a minimal topology and enter the CLI:
 ```
@@ -31,7 +32,6 @@ mininet-wifi> nodes
 ```
 
 If the first string typed into the Mininet-WiFi CLI is a station, ap or controller name, the command is executed on that node. Run a command on a station process:
-Display Nodes:
 ```
 mininet-wifi> sta1 ifconfig -a
 ```
