@@ -31,7 +31,8 @@ Run a regression test:
 $ sudo mn --wifi --test pingall --topo single,3
 ```
 
-## Adjustable Verbosity
+<a id="verbosity"></a>
+## Adjustable Verbosity(#verbosity)
 The default verbosity level is info, which prints what Mininet-WiFi is doing during startup and teardown. Compare this with the full debug output with the -v param:
 ```
 $ sudo mn --wifi -v debug

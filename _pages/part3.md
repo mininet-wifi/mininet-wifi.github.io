@@ -16,12 +16,14 @@ To see the list of Command-Line Interface (CLI) options, start up a minimal topo
 $ sudo mn --wifi
 ```
 
-## Display the options:
+<a id="help"></a>
+### [Display the options:](#help)
 ```
 mininet-wifi> help
 ```
 
-## Python Interpreter
+<a id="interpreter"></a>
+## [Python Interpreter](#interpreter)
 If the first phrase on the Mininet-WiFi command line is py, then that command is executed with Python. This might be useful for extending Mininet-WiFi, as well as probing its inner workings. Each station, ao, and controller has an associated Node object.
 
 At the Mininet CLI, run:
@@ -34,7 +36,8 @@ Print the accessible local variables:
 mininet-wifi> py locals()
 ```
 
-## Link Up/Down
+<a id="updown"></a>
+## [Link Up/Down](#updown)
 For fault tolerance testing, it can be helpful to bring links up and down.
 
 To disable both halves of a virtual ethernet pair:
@@ -116,7 +119,8 @@ sta1.setAdhocMode(intf='sta1-wlan0')
 sta1.setMeshMode(intf='sta1-wlan0')
 ```
 
-## Setting up the Node Position
+<a id="position"></a>
+## [Setting up the Node Position](#position)
 ```
 mininet-wifi> py sta1.setPosition('10,10,0') # x=10, y=10, z=0
 ```
