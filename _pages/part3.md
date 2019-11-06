@@ -8,7 +8,8 @@ author_profile: true
 
 # Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands
 
-## Display Options
+<a id="display"></a>
+## [Display Options](#display)
 To see the list of Command-Line Interface (CLI) options, start up a minimal topology and leave it running. Build the Mininet-WiFi:
 
 ```
@@ -46,7 +47,8 @@ You should see an OpenFlow Port Status Change notification get generated. To bri
 mininet-wifi> link sta1 ap1 up
 ```
 
-## Forcing Association
+<a id="forcing"></a>
+## [Forcing Association](#forcing)
 
 You can force the association with an AP either by using iw tool:
 ```
@@ -58,7 +60,8 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 ```
 
-## Setting up Tx Power
+<a id="txpower"></a>
+## [Setting up Tx Power](#txpower)
 You can set the Tx Power either by iw tool (for txpower = 10):
 ```
 mininet-wifi> sta1 iw dev sta1-wlan0 set txpower fixed 1000
@@ -69,7 +72,8 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
 ```
 
-## Setting up Channel
+<a id="channel"></a>
+## [Setting up Channel](#channel)
 You can set the channel either by iw tool:  
 ### if the node is AP:
 ```
@@ -89,7 +93,8 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py sta1.setChannel(1, intf='ap1-wlan1')
 ```
 
-## Setting up Operation Mode
+<a id="mode"></a>
+## [Setting up Operation Mode](#mode)
 
 ### Master
 ```
@@ -116,8 +121,8 @@ sta1.setMeshMode(intf='sta1-wlan0')
 mininet-wifi> py sta1.setPosition('10,10,0') # x=10, y=10, z=0
 ```
 
-
-## Shutting AP down
+<a id="apshutdown"></a>
+## [Shutting AP down](#apshutdown)
 You can shutdown the AP with:
 ```
 mininet-wifi> py ap1.stop_()
@@ -128,14 +133,16 @@ and bring it up again with:
 mininet-wifi> py ap1.start_()
 ```
 
-## XTerm Display
+<a id="xterm"></a>
+## [XTerm Display](#xterm)
 
 To display an xterm for sta1 and sta2:
 ```
 mininet-wifi> xterm sta1 sta2
 ```
 
-## Building Topologies with GUI
+<a id="miniedit"></a>
+## [Building Topologies with GUI](#miniedit)
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/miniedit.png?raw=true)
 

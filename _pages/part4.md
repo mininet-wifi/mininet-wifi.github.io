@@ -7,21 +7,25 @@ author_profile: true
 
 # Part 4: Supported Features
 
-## Socket Communication
+<a id="socket"></a>
+## [Socket Communication](#socket)
 
 The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. Please watch the demo video for a better understanding.
 
 ### Demo Video
 - [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)
 
-## SUMO
+
+<a id="sumo"></a>
+## [SUMO](#sumo)
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/sumo.png?raw=true)
 
 ### Demo Video
 - [https://www.youtube.com/watch?v=nywoltaRVSE](https://www.youtube.com/watch?v=nywoltaRVSE)
 
-## Running P4 Tutorials
+<a id="p4"></a>
+## [Running P4 Tutorials](#p4)
 
 First of all you need to download the P4 VM - you may want to refer to https://github.com/p4lang/tutorials.
 
@@ -52,7 +56,8 @@ Finally, you can run any P4 tutorial from Mininet-WiFi
 
 * * *
 
-## Containernet
+<a id="containernet"></a>
+## [Containernet](#containernet)
 Containernet is a fork of Mininet that allows to use Docker containers as Mininet hosts as well as Mininet-WiFi stations.
 This enables interesting functionalities to built networking/cloud testbeds. The integration is done by subclassing the original Host/Station classes.
 
