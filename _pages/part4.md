@@ -14,6 +14,60 @@ The socket communication allows you to can access methods implemented in Mininet
 ### Demo Video
 - [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)
 
+
+## Network Address Translator (NAT)
+
+You can add a NAT to the Mininet-WiFi network by calling _net.addNAT()_, as illustrated in the code below.
+
+```
+#!/usr/bin/python
+
+"Example to create a Mininet topology and connect it to the internet via NAT"
+
+from mininet.node import Controller
+from mininet.log import setLogLevel, info
+from mn_wifi.cli import CLI_wifi
+from mn_wifi.net import Mininet_wifi
+
+
+def topology():
+
+    "Create a network."
+
+    net = Mininet_wifi(controller=Controller)
+
+    info("*** Creating nodes\n")
+    ap1 = net.addAccessPoint('ap1', ssid='new-ssid', mode='g', channel='1', position='10,10,0')
+    sta1 = net.addStation('sta1', position='10,20,0')
+    c1 = net.addController('c1', controller=Controller)
+
+    info("*** Configuring wifi nodes\n")
+    net.configureWifiNodes()
+
+    info("*** Starting network\n")
+    net.build()
+    net.addNAT(name='nat0', linkTo='ap1', ip='192.168.100.254').configDefault()
+    c1.start()
+    ap1.start([c1])
+
+    info("*** Running CLI\n")
+    CLI_wifi(net)
+
+    info("*** Stopping network\n")
+    net.stop()
+
+    
+if __name__ == '__main__':
+    setLogLevel('info')
+    topology()
+```
+
+According to the code below, _addNAT_ creates a Node named _nat0_ linked with _ap1_. The IP 192.168.100.254 will be assigned to _nat0_ and this is the default gateway assigned to the all nodes that make up the network topology (only _sta1_ in our case).   
+
+```
+net.addNAT(name='nat0', linkTo='ap1', ip='192.168.100.254').configDefault()
+```
+
 ## SUMO
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/sumo.png?raw=true)
