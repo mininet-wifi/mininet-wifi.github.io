@@ -63,8 +63,16 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 ```
 
+<a id="antennagain"></a>
+## [Setting Antenna Gain](#antennagain)
+You can set the Antenna Gain with:
+
+```
+mininet-wifi> py ap1.setAntennaGain(10, intf='ap1-wlan1')
+```
+
 <a id="txpower"></a>
-## [Setting up Tx Power](#txpower)
+## [Setting Tx Power](#txpower)
 You can set the Tx Power either by iw tool (for txpower = 10):
 ```
 mininet-wifi> sta1 iw dev sta1-wlan0 set txpower fixed 1000
@@ -76,7 +84,7 @@ mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
 ```
 
 <a id="channel"></a>
-## [Setting up Channel](#channel)
+## [Setting Channel](#channel)
 You can set the channel either by iw tool:  
 ### if the node is AP:
 ```
