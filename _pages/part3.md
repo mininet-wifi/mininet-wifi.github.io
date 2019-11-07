@@ -105,7 +105,7 @@ mininet-wifi> py sta1.setChannel(1, intf='ap1-wlan1')
 ```
 
 <a id="mode"></a>
-## [Setting up Operation Mode](#mode)
+## [Setting the Operation Mode](#mode)
 
 ### Master
 ```
@@ -128,7 +128,7 @@ sta1.setMeshMode(intf='sta1-wlan0')
 ```
 
 <a id="position"></a>
-## [Setting up the Node Position](#position)
+## [Setting the Node Position](#position)
 ```
 mininet-wifi> py sta1.setPosition('10,10,0') # x=10, y=10, z=0
 ```
