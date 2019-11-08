@@ -45,7 +45,7 @@ clean:
 make
 ``` 
 
-- Finally, you can load your mac80211_hwsim module in Mininet-WiFi by choosing your module just before _configureWifiNodes()_:   
+- Finally, you can load your mac80211_hwsim module in Mininet-WiFi by choosing your module just before configureWifiNodes()_:   
 
 ```
 net.setModule('./mac80211_hwsim.ko')
