@@ -26,8 +26,7 @@ https://github.com/torvalds/linux/blob/master/drivers/net/wireless/mac80211_hwsi
 
 - Now you need to save both mac80211_hwsim.c and mac80211_hwsim.h and proceed with the changes in mac80211_hwsim.c on locally.
 
-- and compile your mac80211_hwsim with a Makefile (consider the content below):    
-
+- and compile your mac80211_hwsim with a Makefile (consider the content below):
 ```
 obj-m += mac80211_hwsim.o
 
@@ -36,17 +35,14 @@ all:
 
 clean:
         make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
-
 ```   
 
-- and compile mac80211_hwsim with:   
-
+- and compile mac80211_hwsim with:
 ```
 make
 ``` 
 
-- Finally, you can load your mac80211_hwsim module in Mininet-WiFi by choosing your module just before configureWifiNodes()_:   
-
+- Finally, you can load your mac80211_hwsim module in Mininet-WiFi by choosing your module just before configureWifiNodes()_:
 ```
 net.setModule('./mac80211_hwsim.ko')
 
