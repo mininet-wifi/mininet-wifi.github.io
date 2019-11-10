@@ -37,9 +37,13 @@ net.addAccessPoint(... band='2.4')
 
 <a id="q4"></a>
 ### [Is it possible to create a wired link between station and ap?](#q4)
-Yes. When you add a link between station and ap you have to add the parameter link=’wired’, for example:
+Yes. When you add a link between station and ap you have to add cls=TCLink, for example:
 ```
-net.addLink(sta1, ap2, link='wired')
+from mininet.link import TCLink
+..
+..
+
+net.addLink(sta1, ap1, cls=TCLink)
 ```
 
 <a id="q5"></a>

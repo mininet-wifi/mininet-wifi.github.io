@@ -88,8 +88,12 @@ $ sudo mn -c
 <a id="wiredlink"></a>
 ## [Creating wired link between sta and ap](#wiredlink)
 
-You can create a wired link between station and access point with link='wired', as shown below:
+You can create a wired link between station and access point with cls=TCLink, as shown below:
 
 ```
-net.addLink(sta1, ap1, link='wired')
+from mininet.link import TCLink
+..
+..
+
+net.addLink(sta1, ap1, cls=TCLink)
 ```
