@@ -58,7 +58,8 @@ py sta1.wintfs[0].txpower
 The same can be done for rssi, mode, channel, freq, range, ip, ip6, etc.
 
 
-## Test connectivity between stations
+<a id="connectivity"></a>
+## [Test connectivity between stations](#connectivity)
 
 Now, verify that you can ping from station1 to station2:
 ```
@@ -82,4 +83,13 @@ If Mininet crashes for some reason, clean it up:
 
 ```
 $ sudo mn -c
+```
+
+<a id="wiredlink"></a>
+## [Creating wired link between sta and ap](#wiredlink)
+
+You can create a wired link between station and access point with link='wired', as shown below:
+
+```
+net.addLink(sta1, ap1, link='wired')
 ```
