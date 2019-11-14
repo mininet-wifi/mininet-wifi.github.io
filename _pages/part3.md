@@ -63,6 +63,16 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 ```
 
+<a id="range"></a>
+## [Setting Signal Range](#range)
+You can set the Signal Range:
+
+```
+mininet-wifi> py sta1.setRange(10, intf='sta1-wlan0')
+```
+
+Keep in mind that if the signal range changes, txpower will also change.
+
 <a id="antennagain"></a>
 ## [Setting Antenna Gain](#antennagain)
 You can set the Antenna Gain with:
