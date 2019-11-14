@@ -49,7 +49,7 @@ mininet> exit
 ## [Client Isolation](#clientisolation)
 
 
-Be default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
+By default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
 isolation. You can either try
 ``` 
 sudo mn --wifi --no-bridge 
