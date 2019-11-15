@@ -78,17 +78,27 @@ Keep in mind that if the signal range changes, txpower will also change.
 You can set the Antenna Gain with:
 
 ```
+net.addStation(... antennaGain=10)
+```
+or
+
+```
 mininet-wifi> py ap1.setAntennaGain(10, intf='ap1-wlan1')
 ```
 
 <a id="txpower"></a>
 ## [Setting Tx Power](#txpower)
+
 You can set the Tx Power either by iw tool (for txpower = 10):
 ```
 mininet-wifi> sta1 iw dev sta1-wlan0 set txpower fixed 1000
 ```
 or by using the Mininet-WiFi's API:
 
+```
+net.addStation(... txpower=10)
+```
+or
 ```
 mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
 ```
