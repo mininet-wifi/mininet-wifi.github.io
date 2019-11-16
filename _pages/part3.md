@@ -65,13 +65,17 @@ mininet-wifi> py sta1.setAssociation(ap1, intf='sta1-wlan0')
 
 <a id="range"></a>
 ## [Setting Signal Range](#range)
-You can set the Signal Range:
+You can set the Signal Range when the node is being created:
+```
+net.addStation(... range=10)
+```
 
+or at runtime:
 ```
 mininet-wifi> py sta1.setRange(10, intf='sta1-wlan0')
 ```
 
-Confirming the signal range:
+and confirming the new value with:
 ```
 mininet-wifi> py sta1.wintfs[0].range
 ```
@@ -80,18 +84,17 @@ Keep in mind that if the signal range changes, txpower will also change.
 
 <a id="antennagain"></a>
 ## [Setting Antenna Gain](#antennagain)
-You can set the Antenna Gain when the node is created:
-
+You can set the Antenna Gain when the node is being created:
 ```
 net.addStation(... antennaGain=10)
 ```
-or at runtime:
 
+or at runtime:
 ```
 mininet-wifi> py ap1.setAntennaGain(10, intf='ap1-wlan1')
 ```
 
-Confirming the antenna gain:
+and confirm the new value with:
 ```
 mininet-wifi> py sta1.wintfs[0].antennaGain
 ```
@@ -103,17 +106,18 @@ You can set the Tx Power either by iw tool (for txpower = 10):
 ```
 mininet-wifi> sta1 iw dev sta1-wlan0 set txpower fixed 1000
 ```
-or by using the Mininet-WiFi's API:
 
+or by using the Mininet-WiFi's API:
 ```
 net.addStation(... txpower=10)
 ```
+
 as well as at runtime:
 ```
 mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
 ```
 
-Confirming the txpower:
+Confirming the new value:
 ```
 mininet-wifi> py ap1.wintfs[0].txpower
 ```
@@ -139,7 +143,7 @@ or by using the Mininet-WiFi's API:
 mininet-wifi> py sta1.setChannel(1, intf='ap1-wlan1')
 ```
 
-Confirming the channel:
+Confirming the new value:
 ```
 mininet-wifi> py sta1.wintfs[0].channel
 ```
