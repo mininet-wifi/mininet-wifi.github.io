@@ -71,19 +71,29 @@ You can set the Signal Range:
 mininet-wifi> py sta1.setRange(10, intf='sta1-wlan0')
 ```
 
+Confirming the signal range:
+```
+mininet-wifi> py sta1.wintfs[0].range
+```
+
 Keep in mind that if the signal range changes, txpower will also change.
 
 <a id="antennagain"></a>
 ## [Setting Antenna Gain](#antennagain)
-You can set the Antenna Gain with:
+You can set the Antenna Gain when the node is created:
 
 ```
 net.addStation(... antennaGain=10)
 ```
-or
+or at runtime:
 
 ```
 mininet-wifi> py ap1.setAntennaGain(10, intf='ap1-wlan1')
+```
+
+Confirming the antenna gain:
+```
+mininet-wifi> py sta1.wintfs[0].antennaGain
 ```
 
 <a id="txpower"></a>
@@ -98,9 +108,14 @@ or by using the Mininet-WiFi's API:
 ```
 net.addStation(... txpower=10)
 ```
-or
+as well as at runtime:
 ```
 mininet-wifi> py ap1.setTxPower(10, intf='ap1-wlan1')
+```
+
+Confirming the txpower:
+```
+mininet-wifi> py ap1.wintfs[0].txpower
 ```
 
 <a id="channel"></a>
@@ -122,6 +137,11 @@ mininet-wifi> sta1-wlan0 ibss join adhocNet 2412 02:CA:FF:EE:BA:01
 or by using the Mininet-WiFi's API:
 ```
 mininet-wifi> py sta1.setChannel(1, intf='ap1-wlan1')
+```
+
+Confirming the channel:
+```
+mininet-wifi> py sta1.wintfs[0].channel
 ```
 
 <a id="mode"></a>
@@ -151,6 +171,11 @@ sta1.setMeshMode(intf='sta1-wlan0')
 ## [Setting the Node Position](#position)
 ```
 mininet-wifi> py sta1.setPosition('10,10,0') # x=10, y=10, z=0
+```
+
+Confirming the position:
+```
+mininet-wifi> py sta1.position
 ```
 
 <a id="apshutdown"></a>
