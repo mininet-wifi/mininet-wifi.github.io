@@ -75,7 +75,7 @@ or at runtime:
 mininet-wifi> py sta1.setRange(10, intf='sta1-wlan0')
 ```
 
-and confirming the new value with:
+and confirm the new value with:
 ```
 mininet-wifi> py sta1.wintfs[0].range
 ```
