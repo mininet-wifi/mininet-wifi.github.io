@@ -6,7 +6,7 @@ author_profile: true
 ---
 
 
-# Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands
+# Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands and Attributes
 
 <a id="display"></a>
 ## [Display Options](#display)
@@ -148,6 +148,26 @@ Confirming the new value:
 mininet-wifi> py sta1.wintfs[0].channel
 ```
 
+<a id="shownode"></a>
+## [Showing and Hiding Nodes](#shownode)
+
+You can hide the node with:
+```
+sta1.hide()
+```
+
+You can show the node again with:
+```
+sta1.show()
+```
+
+<a id="setcirclecolor"></a>
+## [Setting Circle Color](#setcirclecolor)
+You can set the signal range - circle - color with:
+```
+sta1.setCircleColor('r')  # for red color
+```
+
 <a id="mode"></a>
 ## [Setting the Operation Mode](#mode)
 
@@ -192,6 +212,18 @@ and bring it up again with:
 
 ```
 mininet-wifi> py ap1.start_()
+```
+
+<a id="stopsimulation"></a>
+## [Stopping Simulation](#stopsimulation)
+Considering that you have some simulation with mobility running you can stop it with:
+```
+mininet-wifi> stop
+```
+
+And rung it again with:
+```
+mininet-wifi> start
 ```
 
 <a id="xterm"></a>
