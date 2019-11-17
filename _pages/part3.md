@@ -215,13 +215,13 @@ mininet-wifi> py ap1.start_()
 ```
 
 <a id="stopsimulation"></a>
-## [Stopping Simulation](#stopsimulation)
+## [Stopping the Simulation](#stopsimulation)
 Considering that you have some simulation with mobility running you can stop it with:
 ```
 mininet-wifi> stop
 ```
 
-And rung it again with:
+And run it again with:
 ```
 mininet-wifi> start
 ```
