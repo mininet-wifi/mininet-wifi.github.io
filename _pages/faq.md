@@ -45,9 +45,12 @@ from mininet.link import TCLink
 
 net.addLink(sta1, ap1, cls=TCLink)
 ```
-
 <a id="q5"></a>
-### [How to uninstall Mininet-WiFi?](#q5)
+### [Can stations ping APs?](#q5)
+First of all we invite you to read [https://github.com/mininet/mininet/wiki/FAQ#assign-macs](https://github.com/mininet/mininet/wiki/FAQ#assign-macs). However, If you really want stations to ping APs, you may want to set IP address to the wireless network interface and (a) if OVSAP: set datapath='user' when you add the AP; or (b) use UserAP with [BOFUSS](https://github.com/CPqD/ofsoftswitch13).
+
+<a id="q6"></a>
+### [How to uninstall Mininet-WiFi?](#q6)
 ``` 
 sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec /usr/local/lib/python*/*/*mininet* /usr/local/bin/ovs-
 * /usr/local/sbin/ovs-*
