@@ -2,6 +2,16 @@
 layout: default
 ---
 
+<a id="books"></a>
+# [The Mininet-WiFi Book](#books)
+
+## Portuguese Edition
+https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-pt.png?raw=true
+
+## English Edition
+https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-en.png?raw=true
+
+
 <a id="alert"></a>
 ## [Alert!!!](#alert)              
                             
