@@ -39,6 +39,11 @@
 <a href="{{site.site_faq | relative_url}}">FAQ</a>
       </pre>
 
+
+        {% if site.bookpt %}
+          <img src="{{site.bookpt | relative_url}}" alt="Book PT" />
+        {% endif %}
+
         {% if site.show_downloads %}
         <ul class="downloads">
           <li><a href="https://github.com/intrig-unicamp/mininet-wifi/zipball/master">Download <strong>ZIP File</strong></a></li>
