@@ -3,12 +3,12 @@ layout: default
 ---
 
 <a id="books"></a>
-# [The Mininet-WiFi Book](#books)
+## [The Mininet-WiFi Book](#books)
 
-## Portuguese Edition
+### Portuguese Edition
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-pt.png?raw=true)
 
-## English Edition
+### English Edition
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-en.png?raw=true)
 
 
