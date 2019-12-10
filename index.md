@@ -2,20 +2,9 @@
 layout: default
 ---
 
-<a id="books"></a>
-## [The Mininet-WiFi Book](#books)
 
-### Portuguese Edition
-![Octocat](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-pt.png?raw=true)
+Learn more about Mininet-WiFi and SDN with [The Mininet-WiFi Book](https://mininet-wifi.github.io/book/)!  
 
-### English Edition
-![Octocat](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/book-en.png?raw=true)
-
-
-<a id="alert"></a>
-## [Alert!!!](#alert)              
-                            
-The instructions you will find along this page may only work with the [dev branch](https://github.com/intrig-unicamp/mininet-wifi/tree/dev). The information on this page will replace the user manual still available at: https://github.com/ramonfontes/manual-mininet-wifi/raw/master/mininet-wifi-draft-manual.pdf   
 
 <a id="intro"></a>
 ## [Introduction](#intro)
