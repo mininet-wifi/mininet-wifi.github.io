@@ -3,7 +3,7 @@ logo: /assets/img/logo.png
 bookpt: /assets/img/book-pt.png
 description: Emulation Platform for Software-Defined Wireless Networks
 show_downloads: true
-google_analytics:
+google_analytics: true
 baseurl: "/"
 theme: jekyll-theme-minimal
 markdown: kramdown
