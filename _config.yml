@@ -20,6 +20,8 @@ site_propagation: /propagation
 site_mobility: /mobility
 site_faq: /faq
 site_book: /book
+site_publications: https://github.com/intrig-unicamp/mininet-wifi/wiki/Publications,-Citations-&-Users
+site_demos: https://www.youtube.com/playlist?list=PLccoFREVAt_4nEtrkl59mjjf5ZzRX8DZA
 site_sixlowpan: /sixlowpan
 site_mac80211_hwsim: /mac80211_hwsim
 
