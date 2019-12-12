@@ -19,6 +19,7 @@ site_80211p: /80211p
 site_propagation: /propagation
 site_mobility: /mobility
 site_faq: /faq
+site_cases: https://docs.google.com/spreadsheets/d/1laEhejMg6th-Urgc-_RqBi2H6m308Rnh9uJpKZavEio
 site_book: /book
 site_publications: https://github.com/intrig-unicamp/mininet-wifi/wiki/Publications,-Citations-&-Users
 site_demos: https://www.youtube.com/playlist?list=PLccoFREVAt_4nEtrkl59mjjf5ZzRX8DZA
