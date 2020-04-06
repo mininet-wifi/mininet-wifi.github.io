@@ -30,7 +30,7 @@ net.addLink(sta1, cls=adhoc, intf='sta1-wlan0',
             mode='g', channel=5, ht_cap='HT40+')
 ```
 
-Multiple arguments can also be set in `proto_args`.    
+Multiple arguments can also be passed in `proto_args`.    
 
 The list of parameters can be found with the protocol you are using. For example, we found `-hint` by issuing the `olsrd --help` command.
 
