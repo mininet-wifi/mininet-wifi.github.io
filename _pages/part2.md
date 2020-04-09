@@ -45,6 +45,11 @@ $ sudo mn --wifi -v output
 mininet> exit
 ```
 
+<a id="plot-graph"></a>
+## [Plotting Graph](#plot-graph)
+
+You need to call `net.plotGraph()`. See sample files at /examples for your convenience.
+
 <a id="clientisolation"></a>
 ## [Client Isolation](#clientisolation)
 

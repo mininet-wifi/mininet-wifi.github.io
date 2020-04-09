@@ -35,3 +35,23 @@ Multiple arguments can also be passed in `proto_args`.
 The list of parameters can be found with the protocol you are using. For example, we found `-hint` by issuing the `olsrd --help` command.
 
 
+<a id="manet-installing"></a>
+### [Installing](#manet-installing)
+
+#### BATMAN
+
+```
+sudo util/install.sh -B
+```
+
+#### BABEL
+
+```
+sudo util/install.sh -E
+```
+
+#### OLSR
+
+```
+sudo util/install.sh -O
+```
