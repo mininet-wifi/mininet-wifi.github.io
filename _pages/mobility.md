@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 
-# Mobility Models
+<a id="mobility-models"></a>
+## [Mobility Models](#mobility-models)
 
 Mininet-WiFi supports the following mobility models: 
 - RandomWalk
@@ -70,3 +71,9 @@ min_x = Minimum X position # default=0
 max_x = Maximum X position # default=100  
 min_y = Minimum Y position # default=0  
 max_y = Maximum Y position # default=100  
+
+
+<a id="custom-mobility"></a>
+## [Custom Mobility](#custom-mobility)
+
+You can also define custom mobility. To do so, you may want to refer to `examples/mobility.py` for more information.
