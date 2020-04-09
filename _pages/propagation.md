@@ -5,8 +5,9 @@ permalink: /propagation/
 author_profile: true
 ---
 
+<a id="propmodel"></a>
+# [Propagation Models](#propmodel)
 
-# Propagation Models
 
 Mininet-WiFi supports the following propagation models: 
 - Friis Propagation Loss Model,

@@ -27,7 +27,7 @@ net.setMobilityModel(time=0, model='RandomDirection',
 ```
 
 
-In addition, you may want to consider some parameters:
+In addition, you may want to consider some parameters that be can be used when you add some node:
 
 ### Random Walk
 ```
@@ -83,4 +83,4 @@ max_y = Maximum Y position # default=100
 <a id="custom-mobility"></a>
 ## [Custom Mobility](#custom-mobility)
 
-You can also define custom mobility. To do so, you may want to refer to `examples/mobility.py` for more information.
+You can also define custom mobility. To do so, you may want to refer to `examples/mobility.py` and `examples/replaying/replayingMobility.py` for more information.

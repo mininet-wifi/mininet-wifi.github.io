@@ -5,7 +5,9 @@ permalink: /part1/
 author_profile: true
 ---
 
-# Part 1: Everyday Mininet-WiFi Usage
+<a id="part1"></a>
+# [Part 1: Everyday Mininet-WiFi Usage](#part1)
+
 
 <a id="interact"></a>
 ## [Interact with Stations and APs](#interact)

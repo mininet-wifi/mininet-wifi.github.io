@@ -5,9 +5,10 @@ permalink: /part3/
 author_profile: true
 ---
 
-
-# Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands and Attributes
-
+<a id="part3"></a>
+# [Part 3: Mininet-WiFi Command-Line Interface (CLI) Commands and Attributes](#part3)
+ 
+ 
 <a id="display"></a>
 ## [Display Options](#display)
 To see the list of Command-Line Interface (CLI) options, start up a minimal topology and leave it running. Build the Mininet-WiFi:

@@ -5,7 +5,9 @@ permalink: /part4/
 author_profile: true
 ---
 
-# Part 4: Supported Features
+<a id="part4"></a>
+# [Part 4: Supported Features](#part4)
+ 
 
 <a id="socket"></a>
 ## [Socket Communication](#socket)
