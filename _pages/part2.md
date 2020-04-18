@@ -80,13 +80,13 @@ sta1 = net.addStation('sta1', wlans=2)
 
 wlans=2 means that two wireless interfaces will be creted for sta1. APs can have multiple wireless interfaces as well, however, they deserve a particular attention. For example, let’s take the code below:    
 ```
-ap1 = net.addAccessPoint('ap1', wlans=2, ssid=['ssid1,ssid2'], mode='g', channel='1')
+ap1 = net.addAccessPoint('ap1', wlans=2, ssid=['ssid1','ssid2'], mode='g', channel='1')
 ```
 
 You have to define two SSIDs separated by comma in array style. If you do not want two SSIDs for some reason, you can do like below:
 
 ```
-ap1 = net.addAccessPoint('ap1', wlans=2, ssid=[ssid1,'], mode='g', channel='1')
+ap1 = net.addAccessPoint('ap1', wlans=2, ssid=['ssid1',''], mode='g', channel='1')
 ``` 
 or even
 ```
