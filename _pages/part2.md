@@ -59,7 +59,7 @@ You need to call `net.plotGraph()`. See sample files at /examples for your conve
 By default, stations associated with the same access point can communicate with each other without OpenFlow rules. If you want to enable OpenFlow in such case, you need to enable the client
 isolation. You can either try
 ``` 
-sudo mn --wifi --no-bridge 
+sudo mn --wifi --client-isolation
 ```
 or take examples/simplewifitopology.py as reference.  
 
