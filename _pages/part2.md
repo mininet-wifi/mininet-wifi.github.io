@@ -50,7 +50,7 @@ mininet> exit
 <a id="plot-graph"></a>
 ## [Plotting Graph](#plot-graph)
 
-You need to call `net.plotGraph()`. See sample files at /examples for your convenience.
+You need to call `net.plotGraph()`. See sample files at [`/examples`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples) for your convenience.
 
 <a id="clientisolation"></a>
 ## [Client Isolation](#clientisolation)

@@ -29,7 +29,7 @@ The socket communication allows you to can access methods implemented in Mininet
 <a id="p4"></a>
 ## [P4](#p4)
 
-Please refer to `examples/p4/p4.py`
+Please refer to [`examples/p4/`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples/p4) for your convenience.
 
 ### Demo Video
 

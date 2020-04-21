@@ -17,7 +17,7 @@ Mininet-WiFi supports the following propagation models:
 - Two-Ray Ground Propagation Loss Model
 
 ## How to add and configure a Propagation Model?
-You have to call the method net.setPropagationModel() like in examples/propagationModel.py.   
+You have to call the method net.setPropagationModel() like in [`examples/propagationModel.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/propagationModel.py).   
 
 You may also want to consider some parameters, for example:
 

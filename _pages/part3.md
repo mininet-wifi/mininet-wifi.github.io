@@ -240,7 +240,7 @@ mininet-wifi> xterm sta1 sta2
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/miniedit.png?raw=true)
 
-You can run Miniedit from the __examples__ directory
+You can run Miniedit from the __examples__ directory. For example:
 
 ```
 ~/mininet-wifi$ sudo python examples/miniedit.py
