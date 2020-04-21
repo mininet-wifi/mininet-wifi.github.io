@@ -27,33 +27,13 @@ The socket communication allows you to can access methods implemented in Mininet
 - [https://www.youtube.com/watch?v=nywoltaRVSE](https://www.youtube.com/watch?v=nywoltaRVSE)
 
 <a id="p4"></a>
-## [Running P4 Tutorials](#p4)
+## [P4](#p4)
 
-First of all you need to download the P4 VM - you may want to refer to https://github.com/p4lang/tutorials.
-
-Once you have started the VM, install Mininet-WiFi with the following commands:
-```
-~$ sudo apt update
-~$ git clone https://github.com/intrig-unicamp/mininet-wifi
-~$ cd mininet-wifi
-~/mininet-wifi$ sudo util/install.sh -Wlnfv
-```
-Now, you need to remove the tutorials directory
-```
-~$ sudo rm -r tutorials
-```
-and clone the tutorials repository from https://github.com/ramonfontes/tutorials
-```
-~$ git clone https://github.com/ramonfontes/tutorials
-```
-Finally, you can run any P4 tutorial from Mininet-WiFi
-```
-~$ cd tutorials/exercises/basic-wifi
-~/tutorials/exercises/basic-wifi$ make run
-```
+Please refer to `examples/p4/p4.py`
 
 ### Demo Video
 
+- [https://www.youtube.com/watch?v=ccYRMYkosdE](https://www.youtube.com/watch?v=ccYRMYkosdE) (in Portuguese)
 - [https://www.youtube.com/watch?v=v-_gQ7I4RXc](https://www.youtube.com/watch?v=v-_gQ7I4RXc)
 
 * * *

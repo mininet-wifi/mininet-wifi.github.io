@@ -90,3 +90,29 @@ sta1 = net.addStation( ..., min_x=10, max_x=20, min_y=10, max_y=20 )
 ## [Custom Mobility](#custom-mobility)
 
 You can also define custom mobility. To do so, you may want to refer to `examples/mobility.py` and `examples/replaying/replayingMobility.py` for more information.
+
+
+<a id="handover-association-mechanisms"></a>
+## [Handover association mechanisms](#handover-association-mechanisms)
+
+Two mechanisms can be considered:  
+- Least Loaded First (llf)
+- Strongest Signal First (ssf)
+
+You can use them when the mobility is started. For example:
+
+```
+net.startMobility(time=0, ac_method='ssf')
+...
+...
+net.stopMobility(time=10)
+```
+
+or
+
+```
+net.setMobilityModel(... ac_method='ssf')
+```
+
+However, if you want to work with a seamless handover you may want to refer to bgscan (see `examples/handover_bgscan.py`)
+
