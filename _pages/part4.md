@@ -29,7 +29,13 @@ The socket communication allows you to can access methods implemented in Mininet
 <a id="p4"></a>
 ## [P4](#p4)
 
-Please refer to [`examples/p4/`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples/p4) for your convenience.
+You can start the simplest topology scenario with:
+
+``` 
+sudo mn --wifi --mac --arp --ap bmv2 --client-isolation --json-file=default 
+```
+
+You may also want to refer to [`examples/p4/`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples/p4) for your convenience.
 
 ### Demo Video
 
