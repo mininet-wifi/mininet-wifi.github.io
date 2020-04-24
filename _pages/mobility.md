@@ -116,7 +116,7 @@ net.setMobilityModel(... ac_method='ssf')
 
 However, if you want to work with a seamless handover you may want to refer to bgscan (see [`examples/handover_bgscan.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/handover_bgscan.py))
 
-In scenarios where there is no mobility you can enable `ac_method` with `Mininet_wifi()`. For example:
+In scenarios where there is no mobility you can enable `ac_method` within `Mininet_wifi()`. For example:
 
 ``` 
 Mininet_wifi(... ac_method='ssf')
