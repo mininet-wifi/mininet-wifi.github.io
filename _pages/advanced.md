@@ -4,8 +4,8 @@ title: "Advanced"
 permalink: /advanced/
 author_profile: true
 ---
-<a id="part2"></a>
-# [Part 2: Advanced Startup Options](#part2)
+<a id="advanced"></a>
+# [Part 2: Advanced Startup Options](#advanced)
  
 
 Run a Regression Test
