@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Part 2"
-permalink: /part2/
+title: "Advanced"
+permalink: /advanced/
 author_profile: true
 ---
 <a id="part2"></a>
@@ -51,6 +51,18 @@ mininet> exit
 ## [Plotting Graph](#plot-graph)
 
 You need to call `net.plotGraph()`. See sample files at [`/examples`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples) for your convenience.
+
+<a id="line-styles"></a>
+## [Customizing the line style](#line-styles)
+
+
+When you create a link between two APs a solid line between the two APs is created. However, if you wish to customize the line style you can do as follows:
+
+``` 
+net.addLink(ap1, ap2, ls='.')
+```
+
+The list of line styles supported by Mininet-WiFi is the same that matplotlib supports. 
 
 <a id="clientisolation"></a>
 ## [Client Isolation](#clientisolation)
