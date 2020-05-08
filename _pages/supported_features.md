@@ -1,12 +1,12 @@
 ---
 layout: default
-title: "Part 4"
-permalink: /part4/
+title: "Supported Features"
+permalink: /supported_features/
 author_profile: true
 ---
 
-<a id="part4"></a>
-# [Part 4: Supported Features](#part4)
+<a id="supported_features"></a>
+# [Part 4: Supported Features](#supported_features)
  
 
 <a id="socket"></a>
@@ -22,6 +22,22 @@ The socket communication allows you to can access methods implemented in Mininet
 ## [SUMO](#sumo)
 
 ![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/sumo.png?raw=true)
+
+
+### Usage
+
+You can run Sumo with:
+``` 
+net.useExternalProgram(program=sumo, port=8813,
+                       config_file='map.sumocfg'
+                       clients=1)
+```
+**port**: traci server port number   
+**config_file**= the sumo's config  # available at `mn_wifi/sumo/data/`   
+**clients**= number of clients  # you may want to refer to https://sumo.dlr.de/docs/TraCI/Protocol.html
+
+For your convenience a sample file is available at `/examples/vanet-sumo.py`.
+
 
 ### Demo Video
 - [https://www.youtube.com/watch?v=nywoltaRVSE](https://www.youtube.com/watch?v=nywoltaRVSE)
