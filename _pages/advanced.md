@@ -73,7 +73,7 @@ isolation. You can either try
 ``` 
 sudo mn --wifi --client-isolation
 ```
-or take examples/simplewifitopology.py as reference.  
+or take [`examples/simplewifitopology.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/simplewifitopology.py) as reference.  
 
 Client isolation can be used to prevent low-level bridging of frames between associated stations in the BSS. By default, this bridging is allowed.  
 
@@ -181,3 +181,15 @@ ap1 = net.addAccessPoint('ap1', .... datapath='user')
 ### [Background Scanning](#bgscan)
 
 wpa_supplicant behavior for background scanning can be specified by configuring a bgscan module. These modules are responsible for requesting background scans for the purpose of roaming within an ESS (i.e., within a single network block with all the APs using the same SSID). You can find more information about bgscan at [wpa_supplicant.conf](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
+
+
+<a id="socket"></a>
+## [Socket Communication](#socket)
+
+The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. 
+
+A sample file is available at [`examples/socket_server.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/socket_server.py).
+
+
+### Demo Video
+- [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)

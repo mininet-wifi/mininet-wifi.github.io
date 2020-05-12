@@ -14,8 +14,10 @@ site_get_started: /get-started
 site_part1: /part1
 site_advanced: /advanced
 site_part3: /part3
-site_supported_features: /supported_features
 site_80211p: /80211p
+site_containernet: /containernet
+site_sumo: /sumo
+site_p4: /p4
 site_manet: /manet
 site_propagation: /propagation
 site_mobility: /mobility
