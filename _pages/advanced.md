@@ -171,6 +171,12 @@ net.addNAT(name='nat0', linkTo='ap1', ip='192.168.100.254').configDefault()
 
 Mininet-WiFi supports WEP, WPA, WPA2 and WPA3. A sample file is available for your convenience at [`examples/authentication`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/authentication.py).
 
+**note**: OVS does not support WPA in the kernel space. The only way to make OVS work with WPA is by setting datapath = "user" as below:
+
+```
+ap1 = net.addAccessPoint('ap1', .... datapath='user')
+```
+
 <a id="bgscan"></a>
 ### [Background Scanning](#bgscan)
 
