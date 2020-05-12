@@ -1,3 +1,10 @@
+---
+layout: default
+title: "Containernet"
+permalink: /containernet_/
+author_profile: true
+---
+
 <a id="containernet_"></a>
 ## [Containernet](#containernet_)
 Containernet is a fork of Mininet that allows to use Docker containers as Mininet hosts as well as Mininet-WiFi stations.
