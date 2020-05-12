@@ -15,7 +15,6 @@ This enables interesting functionalities to built networking/cloud testbeds. The
 
 Follow these below for installing Containernet with Wi-Fi capabilities:
 
-Clone the containernet repository from https://github.com/ramonfontes/containernet
 ```
 ~$ sudo apt-get install ansible git aptitude
 ~$ git clone https://github.com/ramonfontes/containernet.git
