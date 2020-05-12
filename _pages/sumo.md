@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "SUMO"
-permalink: /sumo_/
+permalink: /sumo/
 author_profile: true
 ---
 

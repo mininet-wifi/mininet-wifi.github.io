@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Containernet"
-permalink: /containernet_/
+permalink: /containernet/
 author_profile: true
 ---
 
