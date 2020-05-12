@@ -12,7 +12,20 @@ author_profile: true
 <a id="socket"></a>
 ## [Socket Communication](#socket)
 
-The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. Please watch the demo video for a better understanding.
+The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. 
+
+A sample file is available at [`examples/socket_server.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/socket_server.py). You basically need to call `net.telemetry` as below:
+
+```
+net.telemetry(nodes=nodes, single=False, data_type='rssi')
+
+nodes: list of nodes
+supported data_type: ['position', 'rssi']
+single: [Default (False): opens a single window and fit all nodes separately, 
+         True: opens a single window and fit all nodes together]
+```
+
+
 
 ### Demo Video
 - [https://www.youtube.com/watch?v=k69t9Xkb0nU](https://www.youtube.com/watch?v=k69t9Xkb0nU)

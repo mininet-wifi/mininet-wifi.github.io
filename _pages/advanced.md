@@ -165,3 +165,13 @@ According to the code below, _addNAT_ creates a Node named _nat0_ linked with _a
 ```
 net.addNAT(name='nat0', linkTo='ap1', ip='192.168.100.254').configDefault()
 ```
+
+<a id="authentication"></a>
+## [Authentication](#authentication)
+
+Mininet-WiFi supports WEP, WPA, WPA2 and WPA3. A sample file is available for your convenience at [`examples/authentication`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/authentication.py).
+
+<a id="bgscan"></a>
+### [Background Scanning](#bgscan)
+
+wpa_supplicant behavior for background scanning can be specified by configuring a bgscan module. These modules are responsible for requesting background scans for the purpose of roaming within an ESS (i.e., within a single network block with all the APs using the same SSID). You can find more information about bgscan at [wpa_supplicant.conf](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
