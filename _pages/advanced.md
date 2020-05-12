@@ -188,7 +188,19 @@ wpa_supplicant behavior for background scanning can be specified by configuring 
 
 The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. 
 
-A sample file is available at [`examples/socket_server.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/socket_server.py).
+A sample file is available at [`examples/socket_server.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/socket_server.py).   
+
+Some of the information you can get from the nodes include:
+- **position** - get.node.position
+- **channel** - get.node.wintfs[0].channel
+- **mode** - get.node.wintfs[0].mode
+- **rssi** - get.node.wintfs[0].rssi
+- **txpower** - get.node.wintfs[0].txpower
+
+Some of the information you can set to the nodes include:
+- **position** = set.node.setPosition(10,10,0)
+- **txpower** = set.node.setTxPower(10, intf=sta1-wlan0)
+- **range** = set.node.setRange(100, intf=sta1-wlan0)
 
 
 ### Demo Video
