@@ -186,7 +186,7 @@ wpa_supplicant behavior for background scanning can be specified by configuring 
 <a id="socket"></a>
 ## [Socket Communication](#socket)
 
-The socket communication allows you to can access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. 
+The socket communication allows you to access methods implemented in Mininet-WiFi as well as send commands from APs, stations, cars, etc. You only need to start the socket server and access it through the socket client. 
 
 A sample file is available at [`examples/socket_server.py`](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/socket_server.py).   
 
