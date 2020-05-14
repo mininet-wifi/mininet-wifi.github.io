@@ -53,7 +53,7 @@ mininet> exit
 You need to call `net.plotGraph()`. See sample files at [`/examples`](https://github.com/intrig-unicamp/mininet-wifi/tree/master/examples) for your convenience.
 
 <a id="line-styles"></a>
-## [Customizing the line style](#line-styles)
+### [Customizing the line style](#line-styles)
 
 
 When you create a link between two APs a solid line between the two APs is created. However, if you wish to customize the line style you can do as follows:
