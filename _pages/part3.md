@@ -166,7 +166,7 @@ sta1.show()
 ## [Setting Circle Color](#setcirclecolor)
 You can set the signal range - circle - color with:
 ```
-sta1.setCircleColor('r')  # for red color
+sta1.set_circle_color('r')  # for red color
 ```
 
 <a id="mode"></a>
