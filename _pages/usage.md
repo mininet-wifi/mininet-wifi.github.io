@@ -5,7 +5,7 @@ permalink: /usage/
 author_profile: true
 ---
 
-<a id="part1"></a>
+<a id="usage"></a>
 # [Part 1: Everyday Mininet-WiFi Usage](#part1)
 
 

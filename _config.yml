@@ -11,9 +11,9 @@ heading_anchors: true
 
 site_index: /index.md
 site_get_started: /get-started
-site_part1: /part1
+site_usage: /usage
 site_advanced: /advanced
-site_part3: /part3
+site_commands: /commands
 site_80211p: /80211p
 site_containernet: /containernet
 site_sumo: /sumo
