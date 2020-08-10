@@ -1,7 +1,7 @@
 ---
 layout: default
-title: "Part 3"
-permalink: /part3/
+title: "Commands"
+permalink: /commands/
 author_profile: true
 ---
 
