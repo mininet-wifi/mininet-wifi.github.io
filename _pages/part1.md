@@ -60,6 +60,18 @@ py sta1.wintfs[0].txpower
 The same can be done for rssi, mode, channel, freq, range, ip, ip6, etc.
 
 
+<a id="supportedModes"></a>
+### [Supported Wireless Modes](#supportedModes)
+
+Mininet-WiFi supports IEEE 802.11a,b,g,b,p,ax,ac, etc. You can basically use all the modes supported by `hostapd` and `wpa_supplicant`. For example:
+```
+$ sudo mn --wifi --mode=g --channel=6
+$ sudo mn --wifi --mode=a --channel=36
+$ sudo mn --wifi --mode=n --freq=5 --channel=36
+$ sudo mn --wifi --mode=n --freq=2.4 --channel=6
+$ sudo mn --wifi --mode=ax --channel=36
+```
+
 <a id="connectivity"></a>
 ## [Test connectivity between stations](#connectivity)
 
