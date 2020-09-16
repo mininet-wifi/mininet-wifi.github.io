@@ -57,7 +57,7 @@ sudo rm -rf /usr/local/bin/mn /usr/local/bin/mnexec /usr/local/lib/python*/*/*mi
 ``` 
 
 <a id="q7"></a>
-### [What does the warning message for the signal range mean?](#q7)
+### [What does the warning message about the signal range mean?](#q7)
 
 If you define the signal range for a node you can get the following message:
 
