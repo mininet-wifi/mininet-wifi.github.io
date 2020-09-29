@@ -234,14 +234,3 @@ To display an xterm for sta1 and sta2:
 ```
 mininet-wifi> xterm sta1 sta2
 ```
-
-<a id="miniedit"></a>
-## [Building Topologies with GUI](#miniedit)
-
-![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/miniedit.png?raw=true)
-
-You can run Miniedit from the __examples__ directory. For example:
-
-```
-~/mininet-wifi$ sudo python examples/miniedit.py
-```

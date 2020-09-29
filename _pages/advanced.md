@@ -183,6 +183,23 @@ ap1 = net.addAccessPoint('ap1', .... datapath='user')
 wpa_supplicant behavior for background scanning can be specified by configuring a bgscan module. These modules are responsible for requesting background scans for the purpose of roaming within an ESS (i.e., within a single network block with all the APs using the same SSID). You can find more information about bgscan at [wpa_supplicant.conf](https://w1.fi/cgit/hostap/plain/wpa_supplicant/wpa_supplicant.conf).
 
 
+<a id="battery"></a>
+## [Energy Consumption](#battery)
+We have started an implementation of an [Energy Consumption model](https://github.com/intrig-unicamp/mininet-wifi/blob/master/mn_wifi/energy.py) where you can set the voltage to the node. In [this example](https://github.com/intrig-unicamp/mininet-wifi/blob/master/examples/battery.py) you can get the total of energy consumption with `sensor1.wintfs[0].consumption`. Please note that this is only an initial implementation and contributions are most than welcome.
+
+
+<a id="miniedit"></a>
+## [Building Topologies with GUI](#miniedit)
+
+![Branching](https://github.com/mininet-wifi/mininet-wifi.github.io/blob/master/assets/img/miniedit.png?raw=true)
+
+You can run Miniedit from the __examples__ directory. For example:
+
+```
+~/mininet-wifi$ sudo python examples/miniedit.py
+```
+
+
 <a id="socket"></a>
 ## [Socket Communication](#socket)
 
