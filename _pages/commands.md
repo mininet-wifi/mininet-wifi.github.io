@@ -149,6 +149,16 @@ Confirming the new value:
 mininet-wifi> py sta1.wintfs[0].channel
 ```
 
+<a id="renameinterfacename"></a>
+## [Renaming the Interface Name](#renameinterfacename)
+
+You can rename the network interface name with:
+```
+sta1.setIntfName('newName', 0)
+```
+
+You can replace `newName` by any name and `0` by the id of the interface. For example: if the original interface is sta1-wlan0 the id should by 0 while sta1-wlan1 should be 1 and so on.
+
 <a id="shownode"></a>
 ## [Showing and Hiding Nodes](#shownode)
 
