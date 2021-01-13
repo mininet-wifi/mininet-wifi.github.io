@@ -215,7 +215,7 @@ Some of the information you can get from the nodes include:
 - **txpower** - get.node.wintfs[0].txpower
 
 Some of the information you can set to the nodes include:
-- **position** = set.node.setPosition(10,10,0)
+- **position** = set.node.setPosition("10,10,0")
 - **txpower** = set.node.setTxPower(10, intf=sta1-wlan0)
 - **range** = set.node.setRange(100, intf=sta1-wlan0)
 - **roam** = set.node.roam(bssid, intf=sta1-wlan0)
