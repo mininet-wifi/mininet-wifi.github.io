@@ -10,7 +10,7 @@ author_profile: true
 <a id="q1"></a>
 ### [I do not have mac80211_hwsim. How can I install it?](#q1)
 
-Start a minimal topology and enter the CLI:
+Run the following:
 ```
 sudo apt-get install linux-image-extra-`uname -r`
 ```
