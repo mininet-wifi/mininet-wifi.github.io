@@ -65,9 +65,9 @@ The aforementioned properties have been used to apply values for bandwidth, loss
 
 There are two modes of traffic shaping: ingress and egress. Ingress handles incoming traffic and egress outgoing traffic. Linux does not support shaping/queuing on ingress, but only policing. Therefore IFB exists, which we can attach to the ingress queue while we can add any normal queuing like as egress queue on the IFB device.AP   
 
-Intermediate Functional Block (IFB) is an alternative to tc filters for handling ingress traffic, by redirecting it to a virtual interface and treat is as egress traffic. IFB is supported by setting up ifb=True in Mininet_wifi() class. Further information about IFB is available at http://shorewall.net/traffic_shaping.htm#IFB   
+Intermediate Functional Block (IFB) is an alternative to tc filters for handling ingress traffic, by redirecting it to a virtual interface and treat is as egress traffic. IFB is supported by setting up `ifb=True` in the `Mininet_wifi()` class. Further information about IFB is available at http://shorewall.net/traffic_shaping.htm#IFB   
 
-If you want to enable IFB in Mininet-WiFi you need to set IFB = True within _Mininet_wifi()_:
+If you want to enable IFB in Mininet-WiFi you need to set `IFB=True` in `Mininet_wifi()`:
 
 ```
 net = Mininet_wifi(... ifb=True)
