@@ -41,12 +41,12 @@ mininet-wifi> py locals()
 ## [Link Up/Down](#updown)
 For fault tolerance testing, it can be helpful to bring links up and down.
 
-To disable both halves of a virtual ethernet pair:
+To disassociate `sta1` from `ap1` you can run:
 ```
 mininet-wifi> link ap1 sta1 down
 ```
 
-You should see an OpenFlow Port Status Change notification get generated. To bring the link back up:
+To bring the association back up:
 ```
 mininet-wifi> link sta1 ap1 up
 ```
